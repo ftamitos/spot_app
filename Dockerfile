@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-RUN sudo bash app/get_secret.sh
+RUN bash app/get_secret.sh
 
 COPY app/nginx.conf /etc/nginx/conf.d/default.conf
 COPY app/html/ /usr/share/nginx/html/
