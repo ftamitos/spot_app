@@ -1,0 +1,5 @@
+script:
+  - bash test.sh
+
+after_script:
+  - bash push.sh

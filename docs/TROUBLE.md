@@ -1,0 +1,1 @@
+- querying the dynamodb by code_name value
