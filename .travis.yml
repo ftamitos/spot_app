@@ -1,5 +1,7 @@
+language: bash
+
 script:
-  - bash test.sh
+  - test.sh
 
 after_script:
-  - bash push.sh
+  - push.sh
