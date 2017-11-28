@@ -1,8 +1,8 @@
 FROM nginx:alpine
 
-RUN ./app/get_secret.sh
+RUN sudo bash app/get_secret.sh
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY html/ /usr/share/nginx/html/
+COPY app/nginx.conf /etc/nginx/conf.d/default.conf
+COPY app/html/ /usr/share/nginx/html/
 
 EXPOSE 80
