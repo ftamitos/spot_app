@@ -1,7 +1,8 @@
-language: bash
+language: generic
+sudo: required
 
 script:
-  - sudo bash ./app/test.sh
+  - bash ./app/test.sh
 
-after_script:
-  - sudo bash ./app/push.sh
+after_success:
+  - bash ./app/push.sh
