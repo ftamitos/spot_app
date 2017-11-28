@@ -1,5 +1,6 @@
 FROM nginx:alpine
 
+RUN which bash
 RUN bash app/get_secret.sh
 
 COPY app/nginx.conf /etc/nginx/conf.d/default.conf
