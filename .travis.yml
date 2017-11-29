@@ -1,8 +1,12 @@
 language: bash
-sudo: required
+
+addons:
+  pip:
+    packages:
+	  - awscli
 
 script:
-  - bash ./app/test.sh
+  - sudo bash app/test.sh
 
-after_success:
-  - bash ./app/push.sh
+after_script:
+  - sudo bash app/push.sh
