@@ -1,9 +1,9 @@
 language: bash
 
-addons:
-  pip:
-    packages:
-	  - awscli
+#addons:
+#  pip:
+#    packages:
+#	  - awscli
 
 script:
   - sudo bash app/test.sh
